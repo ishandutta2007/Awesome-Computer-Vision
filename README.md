@@ -32,21 +32,21 @@ flowchart LR
 
 Depending on the underlying mathematical strategy used to transform pixel fields into actionable representations, the evolution of CV is characterized by distinct algorithmic schools.
 
-### A. Classical Mathematical & Edge-Based Vision
-*   **Mechanism:** Applies spatial gradient operators across an image to detect discontinuities in brightness, utilizing Hough transforms to link edges into structural shapes.
-*   **Key Algorithms:** Canny Edge Detection, Sobel Filters, and Laplacian of Gaussian.
+- ### A. Classical Mathematical & Edge-Based Vision
+    *   **Mechanism:** Applies spatial gradient operators across an image to detect discontinuities in brightness, utilizing Hough transforms to link edges into structural shapes.
+    *   **Key Algorithms:** Canny Edge Detection, Sobel Filters, and Laplacian of Gaussian.
 
-### B. Local Feature Matching & Keypoint Pipelines
-*   **Mechanism:** Scans images for highly salient localized anchor points (like corners or high-contrast blobs), creating a mathematical patch vector descriptor that can be searched and matched across different camera angles.
-*   **Key Algorithms:** SIFT (Scale-Invariant Feature Transform), SURF, ORB, and Harris Corner Detection.
+- ### B. Local Feature Matching & Keypoint Pipelines
+    *   **Mechanism:** Scans images for highly salient localized anchor points (like corners or high-contrast blobs), creating a mathematical patch vector descriptor that can be searched and matched across different camera angles.
+    *   **Key Algorithms:** SIFT (Scale-Invariant Feature Transform), SURF, ORB, and Harris Corner Detection.
 
-### C. Connectionist Deep Spatial Encoding (CNNs)
-*   **Mechanism:** Implements localized convolutional kernels [7] that slide across a canvas, enforcing translation invariance and local connectivity. The network automatically stacks representations hierarchically (extracting raw lines in layer 1, textures in layer 4, and full object semantics in layer 16).
-*   **Key Architectures:** ResNet, VGG, MobileNet, and ConvNeXt.
+- ### C. Connectionist Deep Spatial Encoding (CNNs)
+    *   **Mechanism:** Implements localized convolutional kernels [7] that slide across a canvas, enforcing translation invariance and local connectivity. The network automatically stacks representations hierarchically (extracting raw lines in layer 1, textures in layer 4, and full object semantics in layer 16).
+    *   **Key Architectures:** ResNet, VGG, MobileNet, and ConvNeXt.
 
-### D. Attention-Driven Visual Patchification (ViTs)
-*   **Mechanism:** Discards convolutional assumptions completely. It flattens an image into non-overlapping grids of $14 \times 14$ or $16 \times 16$ pixel patches, projecting them linearly into a sequence of tokens processed via parallel multi-head self-attention mechanisms.
-*   **Key Architectures:** Vanilla ViT, Swin Transformer, and Multi-Head Latent Attention (MLA).
+- ### D. Attention-Driven Visual Patchification (ViTs)
+    *   **Mechanism:** Discards convolutional assumptions completely. It flattens an image into non-overlapping grids of $14 \times 14$ or $16 \times 16$ pixel patches, projecting them linearly into a sequence of tokens processed via parallel multi-head self-attention mechanisms.
+    *   **Key Architectures:** Vanilla ViT, Swin Transformer, and Multi-Head Latent Attention (MLA).
 
 ---
 
