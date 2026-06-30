@@ -10,8 +10,11 @@ Computer Vision (CV) is a foundational field of Artificial Intelligence dedicate
 The overarching trajectory of Computer Vision reflects a systemic shift from hand-crafted mathematical rules and symbolic geometry to data-driven deep representations and unified multimodal sequence spaces.
 
 
-```
-[The Symbolic & Geometric Era (1960s-1980s)] ---> [The Hand-Crafted Feature Era (1990s-2010s)] ---> [The Deep Learning & Foundation Era (2012-2026+)](Block Worlds & Edge Math)                        (Statistical Local Descriptors)                    (End-to-End Visual Token Models)
+```mermaid
+flowchart LR
+    A["The Symbolic & Geometric Era (1960s-1980s)<br/>(Block Worlds & Edge Math)"]
+    --> B["The Hand-Crafted Feature Era (1990s-2010s)<br/>(Statistical Local Descriptors)"]
+    --> C["The Deep Learning & Foundation Era (2012-2026+)<br/>(End-to-End Visual Token Models)"]
 ```
 
 *   **The Symbolic, Geometric, & "Block Worlds" Era (~1960s–1980s)**
