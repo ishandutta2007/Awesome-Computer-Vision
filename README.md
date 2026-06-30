@@ -9,7 +9,11 @@ Computer Vision (CV) is a foundational field of Artificial Intelligence dedicate
 
 The overarching trajectory of Computer Vision reflects a systemic shift from hand-crafted mathematical rules and symbolic geometry to data-driven deep representations and unified multimodal sequence spaces.
 
+
+```
 [The Symbolic & Geometric Era (1960s-1980s)] ---> [The Hand-Crafted Feature Era (1990s-2010s)] ---> [The Deep Learning & Foundation Era (2012-2026+)](Block Worlds & Edge Math)                        (Statistical Local Descriptors)                    (End-to-End Visual Token Models)
+```
+
 *   **The Symbolic, Geometric, & "Block Worlds" Era (~1960s–1980s)**
     *   *Concept:* The genesis of the field. Early researchers conceptualized vision as a sequential process of edge extraction followed by geometric reasoning. Larry Roberts' 1963 PhD thesis ("Block World") [1] proved that 3D solid structures could be mathematically reconstructed from 2D line drawings. This era relied on hardcoded mathematical calculus—such as Sobel, Canny, and Marr’s vision paradigm [2]—to isolate lines, textures, and shading shapes manually.
     *   *Limitation:* Rigidly fragile. The systems collapsed instantly when introduced to natural lighting variations, occlusions, background noise, or non-geometric real-world objects.
