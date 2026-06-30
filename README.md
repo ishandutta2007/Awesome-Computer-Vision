@@ -17,14 +17,11 @@ flowchart LR
     --> C["The Deep Learning & Foundation Era (2012-2026+)<br/>(End-to-End Visual Token Models)"]
 ```
 
-*   **The Symbolic, Geometric, & "Block Worlds" Era (~1960s–1980s)**
-    *   *Concept:* The genesis of the field. Early researchers conceptualized vision as a sequential process of edge extraction followed by geometric reasoning. Larry Roberts' 1963 PhD thesis ("Block World") [1] proved that 3D solid structures could be mathematically reconstructed from 2D line drawings. This era relied on hardcoded mathematical calculus—such as Sobel, Canny, and Marr’s vision paradigm [2]—to isolate lines, textures, and shading shapes manually.
-    *   *Limitation:* Rigidly fragile. The systems collapsed instantly when introduced to natural lighting variations, occlusions, background noise, or non-geometric real-world objects.
-*   **The Statistical & Hand-Crafted Feature Descriptor Era (~1990s–2011)**
-    *   *Concept:* Shifted from global geometric models to invariant local descriptors. Instead of hardcoding complete object math, engineers designed highly robust local feature extractors that were statistically invariant to scale, illumination, and rotation. Algorithms like **SIFT (1999)**, **HOG (2005)**, and the **Viola-Jones object detection framework (2001)** [5] converted localized pixel matrices into mathematical signatures, routing them through classical machine learning classifiers like Support Vector Machines (SVMs).
-    *   *Limitation:* Introduced a heavy human engineering bottleneck. Designing descriptors required years of manual math tuning, and features were incapable of learning higher-level semantic contexts natively.
-*   **The Deep Learning, Transformer, & Foundation Era (2012–Present)**
-    *   *Concept:* Sparked by the historic performance of **AlexNet (2012)** [6] on the ImageNet challenge. Hand-crafted features were discarded entirely in favour of end-to-end **Convolutional Neural Networks (CNNs)** [6, 7] that learned representations directly from data. This evolved into the **Vision Transformer (ViT, 2020)**, treating image patches exactly like sentence tokens. Today, the field has converged on **Multimodal Foundation Models (like CLIP, SigLIP, and GPT-4o)**, where vision and text share a unified, omnidirectional latent token space natively.
+| Era | Core Concept | Limitations | First Used Year | First Paper Reference |
+| :--- | :--- | :--- | :---: | :--- |
+| **The Symbolic, Geometric, & "Block Worlds" Era (~1960s–1980s)** | Vision as a sequential process of edge extraction followed by geometric reasoning. Larry Roberts' PhD thesis proved that 3D structures could be reconstructed from 2D drawings. Relied on hardcoded mathematical calculus (Sobel, Canny, Marr's paradigm). | Rigidly fragile. Collapsed when introduced to natural lighting variations, occlusions, background noise, or non-geometric real-world objects. | 1963 | [Roberts (1963)](https://dspace.mit.edu/handle/1721.1/11580) [[1]](#references) |
+| **The Statistical & Hand-Crafted Feature Descriptor Era (~1990s–2011)** | Invariant local descriptors. Hand-crafted feature extractors statistically invariant to scale, illumination, and rotation (SIFT, HOG, Viola-Jones), routed through Support Vector Machines (SVMs). | Heavy human engineering bottleneck. Required years of manual math tuning; incapable of learning higher-level semantic contexts natively. | 1999 | [Lowe (1999)](https://www.cs.ubc.ca/~lowe/papers/iccv99.pdf) [[3]](#references) |
+| **The Deep Learning, Transformer, & Foundation Era (2012–Present)** | End-to-end Convolutional Neural Networks (CNNs) learning representations directly from data. Evolved into Vision Transformers (ViT) and Multimodal Foundation Models (CLIP, SigLIP, GPT-4o) sharing unified latent token spaces. | None (Represents the modern state-of-the-art paradigm) | 2012 | [Krizhevsky et al. (2012)](https://proceedings.neurips.cc/paper/2012/file/c3982bc38707c31290350448aa57c9a6-Paper.pdf) [[6]](#references) |
 
 ---
 
@@ -32,21 +29,12 @@ flowchart LR
 
 Depending on the underlying mathematical strategy used to transform pixel fields into actionable representations, the evolution of CV is characterized by distinct algorithmic schools.
 
-- ### A. Classical Mathematical & Edge-Based Vision
-    *   **Mechanism:** Applies spatial gradient operators across an image to detect discontinuities in brightness, utilizing Hough transforms to link edges into structural shapes.
-    *   **Key Algorithms:** Canny Edge Detection, Sobel Filters, and Laplacian of Gaussian.
-
-- ### B. Local Feature Matching & Keypoint Pipelines
-    *   **Mechanism:** Scans images for highly salient localized anchor points (like corners or high-contrast blobs), creating a mathematical patch vector descriptor that can be searched and matched across different camera angles.
-    *   **Key Algorithms:** SIFT (Scale-Invariant Feature Transform), SURF, ORB, and Harris Corner Detection.
-
-- ### C. Connectionist Deep Spatial Encoding (CNNs)
-    *   **Mechanism:** Implements localized convolutional kernels [7] that slide across a canvas, enforcing translation invariance and local connectivity. The network automatically stacks representations hierarchically (extracting raw lines in layer 1, textures in layer 4, and full object semantics in layer 16).
-    *   **Key Architectures:** ResNet, VGG, MobileNet, and ConvNeXt.
-
-- ### D. Attention-Driven Visual Patchification (ViTs)
-    *   **Mechanism:** Discards convolutional assumptions completely. It flattens an image into non-overlapping grids of $14 \times 14$ or $16 \times 16$ pixel patches, projecting them linearly into a sequence of tokens processed via parallel multi-head self-attention mechanisms.
-    *   **Key Architectures:** Vanilla ViT, Swin Transformer, and Multi-Head Latent Attention (MLA).
+| Paradigm | Mechanism | Key Algorithms / Architectures | First Used Year | First Paper Reference |
+| :--- | :--- | :--- | :---: | :--- |
+| **A. Classical Mathematical & Edge-Based Vision** | Applies spatial gradient operators across an image to detect discontinuities in brightness, utilizing Hough transforms to link edges into structural shapes. | Canny Edge Detection, Sobel Filters, and Laplacian of Gaussian. | 1968 | [Sobel (1968)](https://research.gatech.edu/sites/default/files/2021-08/A%203x3%20Isotropic%20Gradient%20Operator%20for%20Image%20Processing.pdf) |
+| **B. Local Feature Matching & Keypoint Pipelines** | Scans images for highly salient localized anchor points (like corners or high-contrast blobs), creating a mathematical patch vector descriptor that can be searched and matched across different camera angles. | SIFT, SURF, ORB, and Harris Corner Detection. | 1988 | [Harris & Stephens (1988)](https://www.bmva.org/conferences/avc/1988/050.pdf) |
+| **C. Connectionist Deep Spatial Encoding (CNNs)** | Implements localized convolutional kernels [7] that slide across a canvas, enforcing translation invariance and local connectivity. Stacks representations hierarchically from raw lines to full object semantics. | ResNet, VGG, MobileNet, and ConvNeXt. | 1989 | [LeCun et al. (1989)](http://yann.lecun.com/exdb/publis/pdf/lecun-89e.pdf) |
+| **D. Attention-Driven Visual Patchification (ViTs)** | Discards convolutional assumptions. Flattens an image into non-overlapping grids of $14 \times 14$ or $16 \times 16$ pixel patches, projecting them linearly into a sequence of tokens processed via self-attention mechanisms. | Vanilla ViT, Swin Transformer, and Multi-Head Latent Attention (MLA). | 2020 | [Dosovitskiy et al. (2020)](https://arxiv.org/abs/2010.11929) [[8]](#references) |
 
 ---
 
@@ -68,23 +56,20 @@ As the field expanded, the operational objectives of computer vision scaled from
 
 Translating computer vision code from clean academic datasets into volatile, real-world physical deployment architectures introduces severe system bottlenecks.
 
-*   **The Quadratic Context and Patch Explosion Problem**
-    *   *The Bottleneck:* When processing multi-megapixel graphics or high-resolution document scans, slicing data into fine-grained visual patches creates thousands of active tokens. Feeding these arrays into standard attention graphs triggers a quadratic ($O(N^2)$) memory footprint spike, saturating GPU VRAM instantly.
-    *   *Mitigation:* Implementing **Dynamic Resolution Patching (AnyRes)**, which intelligently processes coarse thumbnails alongside zoomed-in local sub-patches concurrently, coupled with **Linear Attention or Latent Compression Kernels** to reduce token density.
-*   **The "Picasso Problem" and Inductive Bias Drift**
-    *   *The Bottleneck:* Early CNNs overfitted to pure textures, while standard Vision Transformers lack the native spatial assumptions (inductive biases) of convolutions, requiring billions of images to understand basic object orientations without warping features.
-    *   *Mitigation:* Deploying **Hybrid Vision Architectures**, blending local convolutional stems (for crisp edge handling) with global self-attention blocks (for long-range context tracking), optimized via self-supervised masked autoencoding (MAE).
+| Engineering Challenge | The Bottleneck | Mitigation | First Used Year | First Paper Reference |
+| :--- | :--- | :--- | :---: | :--- |
+| **The Quadratic Context and Patch Explosion Problem** | Slicing multi-megapixel graphics into fine-grained visual patches creates thousands of active tokens. Feeding them into standard attention graphs triggers a quadratic ($O(N^2)$) memory footprint spike, saturating GPU VRAM instantly. | Implementing **Dynamic Resolution Patching (AnyRes)** (processing coarse thumbnails and zoomed-in local sub-patches concurrently), coupled with **Linear Attention or Latent Compression Kernels**. | 2024 | [Liu et al. (LLaVA-NeXT) (2024)](https://arxiv.org/abs/2401.18059) |
+| **The "Picasso Problem" and Inductive Bias Drift** | Early CNNs overfitted to pure textures. Standard Vision Transformers lack the native spatial assumptions (inductive biases) of convolutions, requiring billions of images to understand basic object orientations without warping features. | Deploying **Hybrid Vision Architectures** (blending local convolutional stems with global self-attention blocks), optimized via self-supervised masked autoencoding (MAE). | 2017 | [Sabour et al. (Capsule Networks) (2017)](https://arxiv.org/abs/1710.09829) |
 
 ---
 
 ## 5. Modern Frontier Applications
 
-*   **Autonomous Vehicle Perception & Bird's-Eye-View (BEV) Stacks**
-    *   *Application:* Merges continuous high-frame-rate streaming cameras, LiDAR 3D point clouds, and Radar data simultaneously. Deep spatial transformers project these unaligned inputs into a unified 3D BEV vector space, executing lane segmentation and multi-object collision-avoidance logic in severe weather conditions.
-*   **Multimodal GUI Document Auditing & Robotic Grounding**
-    *   *Application:* Powers vision-language model (VLM) operational agents. The vision pipeline processes interface screenshots, high-res blueprints, or complex multi-axis charts, extracting layout metrics to execute tool-augmented office tasks or calculate precise robotic tool manipulation vectors.
-*   **High-Fidelity Generative Flow Matching & Video Synthesis**
-    *   *Application:* Drives advanced generative physical simulators. By reversing ordinary differential equation (ODE) straight-line trajectories over noise tensors, spatial diffusion models synthesize photorealistic, physically consistent video sequences from text prompts, accelerating engineering pre-visualization loops.
+| Application Field | Technical Description & Workflow | First Used Year | First Paper Reference |
+| :--- | :--- | :--- | :--- |
+| **Autonomous Vehicle Perception & Bird's-Eye-View (BEV) Stacks** | Merges continuous high-frame-rate streaming cameras, LiDAR 3D point clouds, and Radar data simultaneously. Deep spatial transformers project inputs into a unified 3D BEV vector space, executing lane segmentation and multi-object collision-avoidance logic. | 2020 | [Philion & Fidler (LSS) (2020)](https://arxiv.org/abs/2008.05711) |
+| **Multimodal GUI Document Auditing & Robotic Grounding** | Powers vision-language model (VLM) operational agents. Processes interface screenshots, high-res blueprints, or complex multi-axis charts, extracting layout metrics to execute tool-augmented office tasks or calculate robotic tool manipulation vectors. | 2023 | [Brohan et al. (RT-2) (2023)](https://arxiv.org/abs/2307.15818) |
+| **High-Fidelity Generative Flow Matching & Video Synthesis** | Drives advanced generative physical simulators. By reversing ordinary differential equation (ODE) straight-line trajectories over noise tensors, spatial diffusion models synthesize photorealistic, physically consistent video sequences from text prompts. | 2022 | [Lipman et al. (Flow Matching) (2022)](https://arxiv.org/abs/2210.02099) |
 
 ---
 
