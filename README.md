@@ -1,11 +1,16 @@
-# Awesome-Computer-Vision
-## Computer Vision (CV): History, Progression, Evolution, & Paradigms
+# Awesome-Computer-Vision 👁️🤖
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Computer Vision Banner" width="100%">
+</p>
+
+## 🚀 Computer Vision (CV): History, Progression, Evolution, & Paradigms
 
 Computer Vision (CV) is a foundational field of Artificial Intelligence dedicated to enabling digital systems to process, interpret, visually reconstruct, and reason about visual data, such as images, videos, and multi-dimensional spatial grids. Over more than six decades, the field has transitioned from basic binary line extraction to hand-crafted geometric models, statistical feature engineering, and modern web-scale multimodal foundation networks. What began as a brief summer academic project has evolved into a ubiquitous cognitive layer driving global industrial automation, medical diagnostics, autonomous transport, and human-computer synthesis.
 
 ---
 
-## 1. The Macro Chronological Evolution
+## 📅 1. The Macro Chronological Evolution
 
 The overarching trajectory of Computer Vision reflects a systemic shift from hand-crafted mathematical rules and symbolic geometry to data-driven deep representations and unified multimodal sequence spaces.
 
@@ -25,7 +30,7 @@ flowchart LR
 
 ---
 
-## 2. Core Methodological Paradigms
+## ⚙️ 2. Core Methodological Paradigms
 
 Depending on the underlying mathematical strategy used to transform pixel fields into actionable representations, the evolution of CV is characterized by distinct algorithmic schools.
 
@@ -38,7 +43,7 @@ Depending on the underlying mathematical strategy used to transform pixel fields
 
 ---
 
-## 3. The Core Vision Task Hierarchy
+## 📊 3. The Core Vision Task Hierarchy
 
 As the field expanded, the operational objectives of computer vision scaled from global image sorting to dense spatial tracking and 3D geometric synthesis.
 
@@ -52,7 +57,7 @@ As the field expanded, the operational objectives of computer vision scaled from
 
 ---
 
-## 4. Production Engineering Challenges & Historical Mitigations
+## 🛠️ 4. Production Engineering Challenges & Historical Mitigations
 
 Translating computer vision code from clean academic datasets into volatile, real-world physical deployment architectures introduces severe system bottlenecks.
 
@@ -63,7 +68,7 @@ Translating computer vision code from clean academic datasets into volatile, rea
 
 ---
 
-## 5. Modern Frontier Applications
+## 🌟 5. Modern Frontier Applications
 
 | Application Field | Technical Description & Workflow | First Used Year | First Paper Reference |
 | :--- | :--- | :--- | :--- |
@@ -73,7 +78,7 @@ Translating computer vision code from clean academic datasets into volatile, rea
 
 ---
 
-## References
+## 📚 References
 1. Roberts, L. G. (1963). *Machine Perception of Three-Dimensional Solids* (Doctoral dissertation, Massachusetts Institute of Technology).
 2. Marr, D. (1982). *Vision: A computational investigation into the human representation and processing of visual information*. W. H. Freeman and Company.
 3. Lowe, D. G. (1999). Object recognition from local scale-invariant features. *Proceedings of the Seventh IEEE International Conference on Computer Vision*, 2, 1150-1157.
