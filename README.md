@@ -111,3 +111,5 @@ Translating computer vision code from clean academic datasets into volatile, rea
 
 To advance this documentation repository, context, or layout, consider exploring the following development pathways:
 * Implement a **Python script using PyTorch and Hugging Face** demonstrating how to load a modern Vision-Language model to extract zero-shot classification maps from an image via CLIP.
+# Awesome-Computer-Vision
+
