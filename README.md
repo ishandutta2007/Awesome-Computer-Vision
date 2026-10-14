@@ -113,3 +113,138 @@ To advance this documentation repository, context, or layout, consider exploring
 * Implement a **Python script using PyTorch and Hugging Face** demonstrating how to load a modern Vision-Language model to extract zero-shot classification maps from an image via CLIP.
 # Awesome-Computer-Vision
 
+# Top Computer Vision Ecosystem
+
+**Curated List of SaaS Products & Open-Source GitHub Projects**  
+*Focused on Image Classification, Object Detection & Visual AI Pipelines*  
+**Last updated: March 2026**
+
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Computer Vision**. These tools enable developers and organizations to build, train, and deploy models that understand images and video—powering use cases from autonomous vehicles to medical imaging, industrial inspection, and retail analytics.
+
+**Examples** include OpenCV, Roboflow, Ultralytics YOLO, Clarifai, Supervisely, Encord, Scale AI, Landing AI, V7 Labs, and AlwaysAI (the category leaders).
+
+**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom model training, and production inference pipelines—ideal for researchers, ML engineers, and developers seeking transparent, vendor-independent computer vision solutions.
+
+Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+
+## Table of Contents
+- [SaaS/Hosted Platforms](#saas-hosted-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+
+## SaaS/Hosted Platforms
+
+- **[OpenCV.ai](https://opencv.ai/)**  
+  Commercial arm of the OpenCV ecosystem offering consulting, custom development, and managed services. Provides enterprise support for computer vision pipelines built on the open-source library.
+
+- **[Roboflow](https://roboflow.com/)**  
+  Dataset preparation and deployment platform with versioning and managed annotation workflows. Preserves traceability into training exports for controlled label iteration.
+
+- **[Ultralytics HUB](https://hub.ultralytics.com/)**  
+  No-code end-to-end ML platform for training and deploying YOLO models. Features cloud training with NVIDIA T4 GPU instances, dataset management, model selection, and REST API access.
+
+- **[Clarifai](https://www.clarifai.com/)**  
+  Production tagging platform with model training and customization. Supports versioned models for repeatable inference baselines and configurable threshold governance.
+
+- **[Supervisely](https://supervisely.com/)**  
+  Computer vision platform with advanced video and 3D point cloud labeling. Features tracking-by-detection, pretrained 3D models for LiDAR, and 2D-to-3D annotation transfer.
+
+- **[Encord](https://encord.com/)**  
+  Data-centric computer vision platform with annotation, curation, and model evaluation. Features active learning and workflow automation.
+
+- **[Scale AI](https://scale.com/)**  
+  Data platform for AI with annotation, curation, and model evaluation services. Supports computer vision teams with training data pipelines for classification and detection models.
+
+- **[Landing AI](https://landing.ai/)**  
+  Computer vision platform focused on data-centric AI. Provides tools for visual inspection, defect detection, and model deployment for industrial use cases.
+
+- **[V7 Labs](https://www.v7labs.com/)**  
+  AI-powered document and image analysis platform. Combines computer vision with document understanding for automated data extraction and classification workflows.
+
+- **[AlwaysAI](https://alwaysai.co/)**  
+  Edge computer vision platform for deploying models on embedded devices. Features pre-built models and deployment tooling for IoT and industrial applications.
+
+## Open-Source GitHub Projects
+
+- **[OpenCV](https://github.com/opencv/opencv)**  
+  The most widely used computer vision library (Apache-2.0). **80,000+ GitHub stars**. Features 2,500+ optimized algorithms covering image processing, feature detection, object tracking, and DNN module for running pretrained models. Cross-platform with C++, Python, Java, and JavaScript bindings. **The foundation for virtually all open-source computer vision projects.**
+
+- **[Ultralytics YOLO](https://github.com/ultralytics/ultralytics)**  
+  The most widely used object detection framework (AGPL-3.0). **45,000+ GitHub stars**. YOLOv8 features anchor-free design supporting detection, segmentation, pose estimation, and classification. Evolution: YOLOv9 (GELAN backbone), YOLOv10 (NMS-free), YOLOv11 (improved small-object detection), YOLOv12 (region attention, FlashAttention). Foundation for countless production detection systems.
+
+- **[PyTorch](https://github.com/pytorch/pytorch)**  
+  Leading deep learning framework (BSD license) with first-class computer vision support. **85,000+ GitHub stars**. TorchVision provides pretrained ResNet, VGG, EfficientNet, and ConvNeXt models with ImageNet weights, plus data loading and augmentation utilities.
+
+- **[TorchVision](https://github.com/pytorch/vision)**  
+  Official PyTorch library for computer vision (BSD license). Features classification, detection, and segmentation models with pretrained weights. Includes transforms, datasets (ImageNet, CIFAR, MNIST), and ONNX export support.
+
+- **[TensorFlow](https://github.com/tensorflow/tensorflow)**  
+  End-to-end open-source ML platform (Apache-2.0). **190,000+ GitHub stars**. Keras high-level API for building image classification models, with prebuilt layers for CNNs, data augmentation, and transfer learning. TensorFlow Lite enables mobile and edge deployment.
+
+- **[Timm (PyTorch Image Models)](https://github.com/huggingface/pytorch-image-models)**  
+  Massive collection of pretrained image classification models (Apache-2.0). **35,000+ GitHub stars**. Includes ResNet, EfficientNet, ViT, Swin Transformer, ConvNeXt, and hundreds more with pretrained weights. Standard library for state-of-the-art CV model access.
+
+- **[MMDetection](https://github.com/open-mmlab/mmdetection)**  
+  OpenMMLab detection toolbox (Apache-2.0) with comprehensive configs and pretrained models. **30,000+ GitHub stars**. 85 FPS inference on V100. Part of the OpenMMLab CV ecosystem with unified interfaces for detection, segmentation, and classification.
+
+- **[Detectron2](https://github.com/facebookresearch/detectron2)**  
+  Modular detection and segmentation framework by Facebook AI Research (Apache-2.0). **30,000+ GitHub stars**. Includes classification backbones and utilities. Foundation for many production CV systems.
+
+- **[SuperGradients](https://github.com/Deci-AI/super-gradients)**  
+  Training library for computer vision models (Apache-2.0). Provides recipes for classification, detection, and segmentation with automatic hyperparameter tuning and hardware-aware optimization.
+
+- **[FiftyOne](https://github.com/voxel51/fiftyone)**  
+  Open-source tool (Apache-2.0) for curating high-quality datasets and refining visual AI models. Features dataset visualization, model evaluation, and embedding analysis. **10,000+ GitHub stars**. Essential for dataset-centric workflows.
+
+- **[Gradio](https://github.com/gradio-app/gradio)**  
+  Build and share ML demos (Apache-2.0). **35,000+ GitHub stars**. Quick UI for image classification models with file upload, webcam capture, and real-time inference. Widely used for model prototyping and stakeholder demos.
+
+- **[Label Studio](https://github.com/HumanSignal/label-studio)**  
+  General-purpose labeling platform (Apache-2.0) for building classification and detection training datasets. **20,000+ GitHub stars**. Supports images, video, text, audio, and time series.
+
+- **[CVAT](https://github.com/cvat-ai/cvat)**  
+  Computer vision annotation tool (MIT) for image and video labeling with tracking support. **14,000+ GitHub stars**. Industry-standard for detection and segmentation annotation.
+
+- **[SAHI (Slicing Aided Hyper Inference)](https://github.com/obss/sahi)**  
+  Framework (MIT) for small object detection via tiling and slicing. Particularly effective for aerial and remote sensing imagery where small objects are prevalent.
+
+- **[OpenMMLab](https://github.com/open-mmlab)**  
+  Comprehensive CV ecosystem (Apache-2.0) including MMPretrain, MMDetection, MMDetection3D, MMYOLO, and MMSegmentation. **100,000+ combined GitHub stars**. Unified interfaces across detection, segmentation, classification, and 3D vision.
+
+### Additional Strong Open-Source Options
+
+- **[scikit-image](https://github.com/scikit-image/scikit-image)** — Image processing library (BSD) for classical CV algorithms. 6,000+ GitHub stars.
+- **[Albumentations](https://github.com/albumentations-team/albumentations)** — Fast image augmentation library (MIT). 15,000+ GitHub stars.
+- **[Kornia](https://github.com/kornia/kornia)** — Differentiable computer vision library (Apache-2.0) for PyTorch. 10,000+ GitHub stars.
+- **[Detectron2](https://github.com/facebookresearch/detectron2)** — Already listed above.
+- **[PaddleDetection](https://github.com/PaddlePaddle/PaddleDetection)** — Object detection toolkit (Apache-2.0) with PP-YOLO and deployment tools.
+- **[OpenVINO](https://github.com/openvinotoolkit/openvino)** — Intel's toolkit (Apache-2.0) for optimizing and deploying CV models on Intel hardware.
+- **[ONNX Runtime](https://github.com/microsoft/onnxruntime)** — Cross-platform inference engine (MIT) for optimized model deployment.
+- **[TensorRT](https://github.com/NVIDIA/TensorRT)** — NVIDIA's SDK for high-performance deep learning inference.
+- Community **HuggingFace** model hubs for pretrained CV models and **Weights & Biases** for experiment tracking.
+
+**Frameworks for building custom systems**: Combine **OpenCV** for classical image processing with **Ultralytics YOLO** or **MMDetection** for deep learning detection, **Timm** for state-of-the-art pretrained backbones, **FiftyOne** for dataset curation and model evaluation, and **ONNX Runtime** or **TensorRT** for optimized inference—creating a fully self-hosted, production-grade computer vision stack.
+
+## How to Contribute
+
+1. Fork the repo.
+2. Add/edit entries in `README.md` (follow existing format).
+3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
+4. Submit PR with a short explanation.
+
+Star the repo if you find it useful!
+
+## Disclaimer
+
+- This is a **community-curated** list — not exhaustive and not an endorsement.
+- Computer vision systems processing images and video must comply with privacy, biometric, and data protection regulations (GDPR, BIPA, CCPA, etc.).
+- **Open-source computer vision is production-ready.** OpenCV, YOLO, and the OpenMMLab ecosystem power countless commercial deployments. The gap between open-source and proprietary CV models has narrowed significantly.
+- **Model licensing varies.** Ultralytics YOLO is AGPL-3.0—commercial use requires either open-sourcing your application or purchasing a license. OpenCV, PyTorch, and TorchVision are permissive (Apache-2.0/BSD). Check the LICENSE file before commercial deployment.
+- **Dataset quality determines model quality.** Garbage in, garbage out applies doubly to CV—annotation errors, class imbalance, and distribution shift are the most common failure modes. FiftyOne, Label Studio, and CVAT exist specifically to address these.
+- Self-hosted open-source solutions require proper GPU provisioning, model versioning, and ongoing maintenance for production reliability. Edge deployments need additional optimization (quantization, pruning) via OpenVINO or TensorRT.
+
+---
+
+**Made for ML engineers, computer vision researchers, and developers building transparent visual AI solutions.**  
+Let's make Computer Vision more open, data-driven, and accessible.
