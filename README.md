@@ -143,6 +143,8 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
@@ -153,67 +155,26 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
+### Sector Overview & Market Dynamics
+
+The global computer vision market is estimated at **$23.6B–$28.2B (2025–2026)** and projected to exceed $100B by the 2030s (~16–20% CAGR). The sector exhibits a **hybrid structure**: foundational compute silicon and edge accelerators (e.g., NVIDIA, Qualcomm) are **highly concentrated**, whereas the vertical SaaS, data annotation, and specialized inspection software layers remain **moderately fragmented** with intense competition across domain-specific vision intelligence and data workflows.
+
+
+
 ## SaaS/Hosted Platforms
 
-
-
-- **[OpenCV.ai](https://opencv.ai/)**  
-
-  Commercial arm of the OpenCV ecosystem offering consulting, custom development, and managed services. Provides enterprise support for computer vision pipelines built on the open-source library.
-
-
-
-- **[Roboflow](https://roboflow.com/)**  
-
-  Dataset preparation and deployment platform with versioning and managed annotation workflows. Preserves traceability into training exports for controlled label iteration.
-
-
-
-- **[Ultralytics HUB](https://hub.ultralytics.com/)**  
-
-  No-code end-to-end ML platform for training and deploying YOLO models. Features cloud training with NVIDIA T4 GPU instances, dataset management, model selection, and REST API access.
-
-
-
-- **[Clarifai](https://www.clarifai.com/)**  
-
-  Production tagging platform with model training and customization. Supports versioned models for repeatable inference baselines and configurable threshold governance.
-
-
-
-- **[Supervisely](https://supervisely.com/)**  
-
-  Computer vision platform with advanced video and 3D point cloud labeling. Features tracking-by-detection, pretrained 3D models for LiDAR, and 2D-to-3D annotation transfer.
-
-
-
-- **[Encord](https://encord.com/)**  
-
-  Data-centric computer vision platform with annotation, curation, and model evaluation. Features active learning and workflow automation.
-
-
-
-- **[Scale AI](https://scale.com/)**  
-
-  Data platform for AI with annotation, curation, and model evaluation services. Supports computer vision teams with training data pipelines for classification and detection models.
-
-
-
-- **[Landing AI](https://landing.ai/)**  
-
-  Computer vision platform focused on data-centric AI. Provides tools for visual inspection, defect detection, and model deployment for industrial use cases.
-
-
-
-- **[V7 Labs](https://www.v7labs.com/)**  
-
-  AI-powered document and image analysis platform. Combines computer vision with document understanding for automated data extraction and classification workflows.
-
-
-
-- **[AlwaysAI](https://alwaysai.co/)**  
-
-  Edge computer vision platform for deploying models on embedded devices. Features pre-built models and deployment tooling for IoT and industrial applications.
+| Platform | Company Size (Valuation / Revenue) | Description | Starting Tier Pricing | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Scale AI](https://scale.com/)** | ~$29.0B Valuation (~$1.0B–$2.0B Revenue) | Enterprise data annotation, curation, RLHF, and visual evaluation platform for production AI. | $0.05/labeling unit (Self-serve) / Custom enterprise (contracts avg. $93k+/yr) | Free tier: 1,000 labeling units (self-serve); Free academic/research access for Nucleus curation. No time-limited free trial. |
+| **[Encord](https://encord.com/)** | ~$550M Valuation (Series C, $110M raised) | Data-centric computer vision platform with dynamic ontologies, multimodal labeling, active learning, and curation. | Paid tiers custom-scoped (Starter tier is self-serve free) | Starter Plan: 100% Free forever (up to 5 seats, core image/video annotation toolkits, dynamic ontologies, self-serve support; excludes data agents). Demo required for Team trial. |
+| **[Landing AI](https://landing.ai/)** | ~$250M Est. Valuation (~$15M–$34M ARR) | Industrial visual inspection, defect detection, and agentic document vision intelligence platform founded by Andrew Ng. | $250/mo (Agentic Document API / 25,000 credits) / Custom enterprise for LandingLens inspection | Free tier: 1,000 credits/month (1 credit per image trained/inferred), max 10,000 images/project, 1 deployed model download (non-commercial), up to 3 org seats. |
+| **[Roboflow](https://roboflow.com/)** | ~$160M Valuation (~$63.6M+ raised) | End-to-end dataset preparation, labeling, augmentation, model training, and edge/cloud deployment platform. | $39/mo (Starter/Core monthly plan) | Free Plan (Public/Free Core): 10–20 credits/month refresh, private datasets & workspaces supported, free self-hosted inference via Roboflow Inference, 1 user seat. |
+| **[Clarifai](https://www.clarifai.com/)** | ~$100M+ Est. ($101M raised; acquired by Nebius) | Production visual tagging, custom classification/detection training, and hosted inference platform. | $30/mo (Community Essential tier; includes $30 usage credits) | Community Plan: 100% Free forever (1,000 operations/month, 1,000 input objects, 1 application, 1 custom trained model, 1 custom workflow, 1 hr deep training/mo). |
+| **[V7 Labs](https://www.v7labs.com/)** | ~$100M Valuation (~$36M+ raised) | AI-powered image, video, and medical/document annotation platform featuring automated segmentation. | $249/mo (V7 Go Pro) / $499/mo (V7 Darwin Starter) | 14-day free trial on platform plans (full access to core annotation and automated segmentation features with scoped proof-of-concept onboarding). |
+| **[OpenCV.ai](https://opencv.ai/)** | Commercial entity of OpenCV (~$10M–$20M Ecosystem) | Commercial services and enterprise long-term support arm of the OpenCV open-source ecosystem. | $6,000/yr ($500/mo Bronze Membership) / $150,000/yr (Enterprise LTS Maintenance) | Free Core Library: 100% free forever under Apache-2.0 license (2,500+ algorithms, unlimited local/commercial use; enterprise SLA/consulting packages require commercial contract). |
+| **[AlwaysAI](https://alwaysai.co/)** | ~$7M–$8M ARR (~$16M raised) | Edge computer vision and IoT analytics platform for deploying real-time vision applications on embedded hardware. | Custom enterprise quotes / Hardware-bundled developer licenses | Free developer evaluation via guided demonstration and site proof-of-concept (POC); self-serve free tier deprecated in favor of custom pilot assessments. |
+| **[Supervisely](https://supervisely.com/)** | ~$1M–$1.5M ARR (Bootstrapped / Non-VC funded) | Modular web operating system for computer vision with 2D/3D annotation, video tracking, and LiDAR workflows. | €199/mo (~$215/mo Pro tier) | Community Edition: 100% Free forever for individuals/researchers (core labeling apps, basic cloud storage, community support). Pro tier includes a 30-day free trial. |
+| **[Ultralytics HUB](https://hub.ultralytics.com/)** | Category leader in detection (Ultralytics ecosystem) | No-code end-to-end ML platform for training and deploying YOLO models on cloud NVIDIA GPUs. | $29/seat/mo (Pro plan; includes $30/mo GPU compute credits) | Free Plan: 100% Free forever ($5 one-time credit, or $25 with verified work email; 100 GB storage with max 10 GB/upload, up to 100 models, 3 concurrent cloud trainings, 3 cloud deployments, unlimited public/private projects). |
 
 
 
